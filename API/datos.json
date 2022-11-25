@@ -1,0 +1,22 @@
+{
+    "pokemones": [
+      {
+        "id": 1,
+        "nombre": "El sexto sentido",
+        "director": "M. Night Shyamalan",
+        "clasificacion": "Drama"
+      },
+      {
+        "id": 4,
+        "nombre": "300",
+        "director": "Zack Snyder",
+        "clasificacion": "Acción"
+      },
+      {
+        "id": 5,
+        "nombre": "El silencio de los corderos",
+        "director": "Jonathan Demme",
+        "clasificacion": "Drama"
+      }
+    ]
+  }

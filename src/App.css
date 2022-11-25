@@ -1,0 +1,12 @@
+.App {
+  width: 800px;
+  height: 800px;
+  margin: 3% auto;
+  background-color: lightskyblue;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
