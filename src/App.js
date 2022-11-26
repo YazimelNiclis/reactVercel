@@ -17,6 +17,7 @@ function App() {
 
   useEffect(() => {
     consultarBack();
+    console.log(process.env.REACT_APP_BASE_URL);
   }, []);
   return (
     <div className="App">{mensaje && <p>{mensaje.time.toString()}</p>}</div>
