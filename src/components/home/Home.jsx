@@ -30,7 +30,7 @@ function Home() {
       });
   };
 
-  const onClickTelefonos = async () => {
+  /*   const onClickTelefonos = async () => {
     await obtenerTelefonos()
       .then((response) => {
         setTelefonos(response);
@@ -38,7 +38,7 @@ function Home() {
       .catch((error) => {
         alert(error);
       });
-  };
+  }; */
 
   useEffect(() => {
     if (!isAuth()) {
@@ -102,7 +102,7 @@ function Home() {
             </Button>
           </li>
           {/* ---------------Lista de telefono--------------- */}
-          <li className="nav-item">
+          {/*  <li className="nav-item">
             <Accordion>
               <Accordion.Item eventKey="1">
                 <Accordion.Header onClick={onClickTelefonos}>
@@ -120,7 +120,7 @@ function Home() {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-          </li>
+          </li> */}
           {/* ---------------Registrar un nuevo telefono--------------- */}
           <li className="nav-item">
             <Button

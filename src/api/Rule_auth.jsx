@@ -1,8 +1,8 @@
 import API from "./Rule_API";
 
-export const iniciarSesion = async (usuario, config) => {
+export const iniciarSesion = async (usuario) => {
   let url = "/api/user/login";
-  return await API.post(url, usuario, config)
+  return await API.post(url, usuario)
     .then((response) => {
       setLocalStorage("token", response.data.token);
       return response.data;
@@ -53,7 +53,7 @@ export const isAuth = () => {
   if (typeof window !== "undefined") {
     const tokenChecked = localStorage.getItem("token"); //compruebo que el usuario esté autenticado
     if (tokenChecked) {
-      return true; //localStorage.getItem("user"));
+      return true;
     } else {
       return false;
     }

@@ -13,18 +13,7 @@ function Login() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    const formData = new FormData();
-
-    formData.append("email", data.email);
-    formData.append("password", data.password);
-
-    const config = {
-      headers: {
-        "content-type": "multipart/form-data",
-      },
-    };
-
-    await iniciarSesion(formData, config)
+    await iniciarSesion(data)
       .then(() => {
         navigate("/Home");
       })
